@@ -1,0 +1,404 @@
+﻿#redui_application
+{
+    font-family: sans-serif;
+}
+
+.redui-hidden
+{
+    visibility: hidden;
+    display: none !important;
+}
+
+.redui-overlay
+{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #AAA;
+    opacity: .3;
+    position: fixed;
+}
+
+/* Window */
+
+.redui-window
+{
+    /* Absolute sizes are set through the template. */
+
+    position: absolute;
+    border: 1px solid;
+}
+
+.redui-modalwindow
+{
+    box-shadow: #808080 0px 0px 30px;
+}
+
+.redui-window-clientarea-outer
+{
+    /* Absolute sizes are set through the template. */
+}
+
+.redui-window-clientarea-inner
+{
+    overflow:auto;
+    width: 100%;
+    height: 100%;
+}
+
+.redui-window-clientarea-layoutpanel
+{
+    margin: 16px;
+}
+
+.redui-window-title-outer
+{
+    /* Absolute sizes are set through the template. */
+}
+
+.redui-window-title-inner
+{
+    width: 100%;
+    height: 100%;
+}
+
+.redui-window-title
+{
+    padding: 8px 8px;
+    font-weight: bolder;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+}
+
+.redui-window-dialogbuttonspanel-outer
+{
+}
+
+.redui-window-dialogbuttonspanel-inner
+{
+    overflow:hidden;
+    padding: 0px 18px 0px 4px;
+    float: right;
+}
+
+.redui-window-closebutton
+{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-image: url(resources/window_close_button.png);
+    background-position: 0px 0px;
+}
+
+.redui-window-closebutton:hover
+{
+    background-image: url(resources/window_close_button_hover.png);
+    background-position: 0px 0px;
+}
+
+.redui-window-closebutton:active
+{
+    background-image: url(resources/window_close_button_active.png);
+    background-position: 0px 0px;
+}
+
+/* Controls */
+
+.redui-textbox-label, .redui-textarea-label, .redui-combobox-label, .redui-gridview-label, .redui-objectselector-label, .redui-treeview-label
+{
+    clear:both;
+    margin: 12px 4px 4px 4px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.redui-checkbox-label
+{
+    margin: 12px 4px 4px 4px;
+    text-align: left;
+    font-weight: bold;
+    font-size: smaller;
+    vertical-align: text-top;
+}
+
+.redui-statictext-outer
+{
+    margin-top: 12px;
+}
+
+.redui-textbox, .redui-textarea, .redui-combobox, .redui-image, .redui-statictext, .redui-objectselector
+{
+    margin: 2px 4px 2px 4px;
+}
+
+.redui-checkbox
+{
+    margin: 12px 4px 4px 4px;
+}
+
+.redui-textbox, .redui-textarea, .redui-combobox, .redui-checkbox, .redui-image, .redui-objectselector
+{
+    padding: 4px;
+}
+
+.redui-statictext
+{
+    cursor: default;
+}
+
+.redui-groupbox
+{
+    margin: 4px;
+    margin-top: 16px;
+    margin-right: 20px;
+    padding: 16px;
+    width: 458px;
+    border: 1px solid;
+}
+
+.redui-groupbox-label
+{
+    font-weight: bold;
+}
+
+.redui-button
+{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    float: left;
+    min-width: 96px;
+    height: 30px;
+    margin: 6px 4px 6px 4px;
+    padding: 4px;
+    border: 1px solid;
+}
+
+.redui-objectselector-lookupbutton
+{
+    border: 1px solid;
+    width: 26px;
+    height: 26px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.redui-dialogbutton
+{
+    margin: 6px 3px !important;
+}
+
+.redui-textbox
+{
+    width: 220px;
+}
+
+.redui-objectselector
+{
+    width: 220px;
+}
+
+.redui-combobox
+{
+    width: 230px;
+}
+
+.redui-textarea
+{
+    width: 440px;
+}
+
+.redui-pager
+{
+    display: block;
+    clear: both;
+}
+
+.redui-pager-button
+{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    float: left;
+    min-width: 30px;
+    height: 30px;
+    margin: 6px 4px 6px 4px;
+    padding: 4px;
+    border: 1px solid;
+}
+
+.redui-pager-ellipsis
+{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 6px 4px 6px 4px;
+    padding: 4px;
+}
+
+/* Grid View */
+
+.redui-gridview
+{
+    margin: 2px 4px 2px 4px;
+    background: white;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-collapse: collapse;
+}
+
+.redui-gridview td, .redui-gridview th
+{
+    padding: 0px;
+}
+
+.redui-gridview-header
+{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    height: 32px;
+}
+
+.redui-gridview-column
+{
+    padding: 4px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    text-align: center;
+}
+
+.redui-gridviewrow
+{
+}
+
+.redui-gridview-cell
+{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    text-align: left;
+}
+
+.redui-gridviewcheckboxcell
+{
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    font-size: small;
+}
+
+.redui-gridviewtextboxcell
+{
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    font-size: small;
+}
+
+.redui-gridviewcomboboxcell
+{
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    font-size: small;
+}
+
+.redui-gridviewstatictextcell
+{
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    display:block;
+    font-size: small;
+}
+
+.redui-gridviewobjectselectorcell
+{
+    padding: 4px;
+    margin: 2px;
+    border: none;
+    font-size: small;
+}
+
+.redui-gridviewobjectselectorcell-outer
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Tree View */
+.redui-treeview
+{
+    display: inline-block;
+}
+
+.redui-treeviewnode .redui-textbox-outer, 
+.redui-treeviewnode .redui-textarea-outer, 
+.redui-treeviewnode .redui-combobox-outer, 
+.redui-treeviewnode .redui-checkbox-outer, 
+.redui-treeviewnode .redui-statictext-outer,
+.redui-treeviewnode .redui-image-outer,
+.redui-treeviewnode .redui-objectselector-outer
+{
+    display: inline-block;
+    font-size: small;
+}
+
+.redui-treeviewnode .redui-image
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.redui-treeviewnode-expander
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.redui-treeviewnode-outer:not(.redui-treeviewnode-collapsed):not(.redui-treeviewnode-empty) > .redui-treeviewnode-expander
+{
+    background-image: url('resources/expander_expanded.png');
+}
+
+.redui-treeviewnode-outer.redui-treeviewnode-collapsed > .redui-treeviewnode-expander
+{
+    background-image: url('resources/expander_collapsed.png');
+}
+
+.redui-treeviewnode-innernodes
+{
+    margin-left: 32px;
+}
+
+.redui-treeviewnode-outer.redui-treeviewnode-collapsed > .redui-treeviewnode-innernodes
+{
+    visibility: hidden;
+    display: none;
+}
+
+.redui-treeviewnode-outer
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.redui-treeviewnode
+{
+    display: inline-block;
+}
+
+.redui-treeviewnode-selected > .redui-treeviewnode > .redui-statictext-outer
+{
+    font-weight: bold;
+}

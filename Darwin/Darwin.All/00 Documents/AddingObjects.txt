@@ -1,0 +1,22 @@
+﻿How to create a new persistent object:
+- Create DB table.
+- Define a POCO object.
+- Define mappings.
+- Create a DTO
+- Modify Artemkv.Darwin.Server.TransactionScripts.GetObject so that it handles objects of a new type
+- Add a REST controller
+
+How to add the new object to the project tree:
+- Create a constant for the new project tree path in Artemkv.Darwin.Common.TreePaths.ProjectTreePath.Element
+- Handle the node retireval in Artemkv.Darwin.Server.DataSources.ProjectTreeViewDataSource
+- Modify the controller GetProjectNodesController
+
+How to create a new object list datasource:
+- Create a new server datasource in Artemkv.Darwin.Server project, DataSources folder
+- Create a constant for the new datasource in Artemkv.Darwin.Server.ObjectListDataSource
+- Modify Artemkv.Darwin.Server.TransactionScripts.GetObjectList so that it handles object lists of a new type
+- Create a new strong typed filter for the new list in Artemkv.Darwin.Controller project, Filters folder
+
+Best practices for RESTModels:
+- override ToString()
+- opt-in serialization with explicit xml element names

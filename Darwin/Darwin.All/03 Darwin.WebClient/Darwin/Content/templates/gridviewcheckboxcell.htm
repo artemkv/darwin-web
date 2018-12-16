@@ -1,0 +1,6 @@
+﻿<td id="{{id}}_template" class="redui-gridview-cell{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}">
+  <input id="{{id}}" type="checkbox" class="redui-gridviewcheckboxcell redui-focusable redui-onchangeupdatesdata" style="width: {{model.width}}px;"></input>
+</td>
+<script type="text/javascript">
+  $("#{{id}}").attr('checked', {{value}});
+</script>

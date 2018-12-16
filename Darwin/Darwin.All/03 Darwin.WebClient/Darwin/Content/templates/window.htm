@@ -1,0 +1,36 @@
+﻿<div id="{{id}}" name="{{name}}" class="redui-window{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}" style="top: {{top}}px; left: {{left}}px;">
+  <div id="{{id}}_titleouter" class="redui-window-title-outer" style="width: {{titleWidth}}px; height: {{titleHeight}}px;">
+    <div class="redui-window-title-inner">
+      <span class="redui-window-title">{{model.title}}</span>
+    </div>
+    <span class="redui-window-closebutton" />
+  </div>
+  <div id="{{id}}_clientareaouter" class="redui-window-clientarea-outer" style="width: {{clientAreaWidth}}px; height: {{clientAreaHeight}}px;">
+    <div id="{{id}}_clientareainner" class="redui-window-clientarea-inner">
+      <div class="redui-window-clientarea-layoutpanel">
+        {{#controls}}
+        {{{_toHtml}}}
+        {{/controls}}
+      </div>
+    </div>
+  </div>
+  <div class="redui-window-dialogbuttonspanel-outer" style="width: {{clientAreaWidth}}px">
+    <div class="redui-window-dialogbuttonspanel-inner">
+    </div>
+  </div>
+</div>
+<div id="{{id}}_overlay" class="redui-overlay redui-hidden"></div>
+<script id="{{id}}_dialogactions">
+  $("#{{id}} .redui-window-closebutton").click(function () {
+    redui.windows["{{id}}"].close("Cancel");
+  });
+
+  $("#{{id}}").keyup(function (e) {
+    if (e.keyCode == 13) { // enter
+      redui.windows["{{id}}"].close("OK");
+    }
+    if (e.keyCode == 27) { // esc
+      redui.windows["{{id}}"].close("Cancel");
+    }
+  });
+</script>

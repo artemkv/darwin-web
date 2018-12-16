@@ -1,0 +1,7 @@
+﻿<div id="{{id}}_template" class="redui-objectselector-outer{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}">
+  {{#model.label}}<label for="{{id}}" class="redui-objectselector-label">
+    <span>{{model.label}}:</span>
+  </label>{{/model.label}}
+  <input id="{{id}}" name="{{name}}" class="redui-objectselector" type="text" tabindex="-1" readonly=""></input><!--
+  --><button id="{{id}}_lookupbutton" class="redui-objectselector-lookupbutton redui-focusable" tabindex="0" type="button">...</button>
+</div>

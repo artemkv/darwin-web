@@ -1,0 +1,10 @@
+﻿<div id="{{id}}_template" class="redui-combobox-outer{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}">
+  {{#model.label}}<label for="{{id}}" class="redui-combobox-label">
+    <span>{{model.label}}:</span>
+  </label>{{/model.label}}
+  <select id="{{id}}" name="{{name}}" class="redui-combobox redui-focusable redui-onchangeupdatesdata">
+    {{#options}}
+    <option value="{{id}}">{{value}}</option>
+    {{/options}}
+  </select>
+</div>

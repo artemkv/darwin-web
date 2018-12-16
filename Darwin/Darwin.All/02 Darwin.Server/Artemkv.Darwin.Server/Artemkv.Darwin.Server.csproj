@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artemkv.Darwin.Server</RootNamespace>
+    <AssemblyName>Artemkv.Darwin.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\packages\NLog.2.0.1.2\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembler.cs" />
+    <Compile Include="DataSources\ListDataSource.cs" />
+    <Compile Include="DataSources\ProjectTreeViewDataSource.cs" />
+    <Compile Include="Filters\BaseEnumValuesFilter.cs" />
+    <Compile Include="Filters\DatabaseBaseEnumsFilter.cs" />
+    <Compile Include="Filters\RelationsItemsFilter.cs" />
+    <Compile Include="Filters\DatabaseEntitiesFilter.cs" />
+    <Compile Include="Filters\DatabaseDataTypesFilter.cs" />
+    <Compile Include="Filters\EntityAttributesFilter.cs" />
+    <Compile Include="Filters\EntityRelationsFilter.cs" />
+    <Compile Include="Filters\ProjectDatabasesFilter.cs" />
+    <Compile Include="RESTModel\ObjectGroup.cs" />
+    <Compile Include="ObjectTreeDataSource.cs" />
+    <Compile Include="RESTHelpers\LinkBuilder.cs" />
+    <Compile Include="RESTHelpers\LinkRelations.cs" />
+    <Compile Include="ListFilter.cs" />
+    <Compile Include="ListFilterParameter.cs" />
+    <Compile Include="Mapping\CalculatedPropertyAttribute.cs" />
+    <Compile Include="Mapping\ObjectCollectionAttribute.cs" />
+    <Compile Include="Mapping\ObjectCollectionDeletionBehavior.cs" />
+    <Compile Include="Mapping\ObjectPropertyAttribute.cs" />
+    <Compile Include="Mapping\ObjectViewPropertyAttribute.cs" />
+    <Compile Include="Mapping\ParentObjectAttribute.cs" />
+    <Compile Include="Mapping\SimplePropertyAttribute.cs" />
+    <Compile Include="ObjectListDataSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registry.cs" />
+    <Compile Include="RESTHelpers\ParamParser.cs" />
+    <Compile Include="RESTModel\Attribute.cs" />
+    <Compile Include="RESTModel\BaseEnum.cs" />
+    <Compile Include="RESTModel\BaseEnumValue.cs" />
+    <Compile Include="RESTModel\Collection.cs" />
+    <Compile Include="RESTModel\Database.cs" />
+    <Compile Include="RESTModel\DataType.cs" />
+    <Compile Include="RESTModel\Entity.cs" />
+    <Compile Include="RESTModel\Link.cs" />
+    <Compile Include="RESTModel\ObjectType.cs" />
+    <Compile Include="RESTModel\PersistentObject.cs" />
+    <Compile Include="RESTModel\Project.cs" />
+    <Compile Include="RESTModel\Relation.cs" />
+    <Compile Include="RESTModel\RelationItem.cs" />
+    <Compile Include="RESTModel\TreeNode.cs" />
+    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="StaleObjectStateException.cs" />
+    <Compile Include="TransactionScripts\GetObject.cs" />
+    <Compile Include="TransactionScripts\GetObjectList.cs" />
+    <Compile Include="TransactionScripts\GetTreeNodes.cs" />
+    <Compile Include="TreeNodePath.cs" />
+    <Compile Include="TreePaths\ProjectTreePath\Element.cs" />
+    <Compile Include="Validation\NotNullValidationRuleAttribute.cs" />
+    <Compile Include="Validation\ObjectPropertyValidationDetails.cs" />
+    <Compile Include="Validation\ObjectValidationEventArgs.cs" />
+    <Compile Include="Validation\RegExpValidationRuleAttribute.cs" />
+    <Compile Include="Validation\ValidationError.cs" />
+    <Compile Include="Validation\ValidationException.cs" />
+    <Compile Include="Validation\ValidationPatterns.cs" />
+    <Compile Include="Validation\ValidationRule.cs" />
+    <Compile Include="Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Artemkv.Darwin.Data\Artemkv.Darwin.Data.csproj">
+      <Project>{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}</Project>
+      <Name>Artemkv.Darwin.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Artemkv.Darwin.ERModel\Artemkv.Darwin.ERModel.csproj">
+      <Project>{e8a01d63-6c3e-445e-a2de-0531c56a1fc1}</Project>
+      <Name>Artemkv.Darwin.ERModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿<div id="{{id}}_template" class="redui-gridview-outer{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}">
+  {{#model.label}}<label for="{{id}}" class="redui-gridview-label">
+    <span>{{model.label}}:</span>
+  </label>{{/model.label}}
+  <table id="{{id}}" name="{{name}}" class="redui-gridview" type="text">
+    <tbody>
+      <tr class="redui-gridview-header">
+        {{#columns}}
+        {{{_toHtml}}}
+        {{/columns}}
+      </tr>
+    </tbody>
+  </table>
+</div>

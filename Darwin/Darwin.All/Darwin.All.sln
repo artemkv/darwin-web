@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Server", "02 Server", "{0A2E19E2-4543-4E08-B0BB-9A431D7BA28E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemkv.Darwin.Server", "02 Darwin.Server\Artemkv.Darwin.Server\Artemkv.Darwin.Server.csproj", "{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemkv.Darwin.Data", "02 Darwin.Server\Artemkv.Darwin.Data\Artemkv.Darwin.Data.csproj", "{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Test", "40 Test", "{0F68C7EC-9107-4417-8307-C68F0C844A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemkv.Darwin.Test", "40 Darwin.Test\Artemkv.Darwin.Test\Artemkv.Darwin.Test.csproj", "{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRun", "40 Darwin.Test\TestRun\TestRun.csproj", "{95C4D252-6288-4A13-8F25-0C5D6CDB690F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Documents", "00 Documents", "{63F710D1-ED15-4389-ABD2-385D364A7EFD}"
+	ProjectSection(SolutionItems) = preProject
+		00 Documents\AddingObjects.txt = 00 Documents\AddingObjects.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Deployment", "99 Deployment", "{A7D364E6-A9E5-4B62-8035-7E9AC005C19B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "80 Database", "80 Database", "{EA5DA646-D233-406B-85D8-26EFEF8B49D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "80 Darwin.Database\Database\Database.csproj", "{99FF3235-67C9-4A05-AA03-000D26FC76B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B03C62F4-1497-4181-A6F6-285042190CE9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 WebClient", "03 WebClient", "{B14BB46E-69A0-4781-BB08-82A5CAF01F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemkv.Darwin.ERModel", "02 Darwin.Server\Artemkv.Darwin.ERModel\Artemkv.Darwin.ERModel.csproj", "{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darwin", "03 Darwin.WebClient\Darwin\Darwin.csproj", "{63983115-9B99-4640-9F4B-69B67836B14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artemkv.Darwin.Common", "02 Darwin.Server\Artemkv.Darwin.Common\Artemkv.Darwin.Common.csproj", "{1F5466CC-0FA3-4202-BA36-20E48C9839B8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://artemkv.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 02\u0020Darwin.Server\\Artemkv.Darwin.Data\\Artemkv.Darwin.Data.csproj
+		SccProjectTopLevelParentUniqueName1 = Darwin.All.sln
+		SccProjectName1 = 02\u0020Darwin.Server/Artemkv.Darwin.Data
+		SccLocalPath1 = 02\u0020Darwin.Server\\Artemkv.Darwin.Data
+		SccProjectUniqueName2 = 02\u0020Darwin.Server\\Artemkv.Darwin.ERModel\\Artemkv.Darwin.ERModel.csproj
+		SccProjectTopLevelParentUniqueName2 = Darwin.All.sln
+		SccProjectName2 = 02\u0020Darwin.Server/Artemkv.Darwin.ERModel
+		SccLocalPath2 = 02\u0020Darwin.Server\\Artemkv.Darwin.ERModel
+		SccProjectUniqueName3 = 02\u0020Darwin.Server\\Artemkv.Darwin.Server\\Artemkv.Darwin.Server.csproj
+		SccProjectTopLevelParentUniqueName3 = Darwin.All.sln
+		SccProjectName3 = 02\u0020Darwin.Server/Artemkv.Darwin.Server
+		SccLocalPath3 = 02\u0020Darwin.Server\\Artemkv.Darwin.Server
+		SccProjectUniqueName4 = 40\u0020Darwin.Test\\Artemkv.Darwin.Test\\Artemkv.Darwin.Test.csproj
+		SccProjectTopLevelParentUniqueName4 = Darwin.All.sln
+		SccProjectName4 = 40\u0020Darwin.Test/Artemkv.Darwin.Test
+		SccLocalPath4 = 40\u0020Darwin.Test\\Artemkv.Darwin.Test
+		SccProjectUniqueName5 = 40\u0020Darwin.Test\\TestRun\\TestRun.csproj
+		SccProjectTopLevelParentUniqueName5 = Darwin.All.sln
+		SccProjectName5 = 40\u0020Darwin.Test/TestRun
+		SccLocalPath5 = 40\u0020Darwin.Test\\TestRun
+		SccProjectUniqueName6 = 80\u0020Darwin.Database\\Database\\Database.csproj
+		SccProjectTopLevelParentUniqueName6 = Darwin.All.sln
+		SccProjectName6 = 80\u0020Darwin.Database/Database
+		SccLocalPath6 = 80\u0020Darwin.Database\\Database
+		SccProjectUniqueName7 = 03\u0020Darwin.WebClient\\Darwin\\Darwin.csproj
+		SccProjectTopLevelParentUniqueName7 = Darwin.All.sln
+		SccProjectName7 = 03\u0020Darwin.WebClient/Darwin
+		SccLocalPath7 = 03\u0020Darwin.WebClient\\Darwin
+		SccProjectUniqueName8 = 02\u0020Darwin.Server\\Artemkv.Darwin.Common\\Artemkv.Darwin.Common.csproj
+		SccProjectTopLevelParentUniqueName8 = Darwin.All.sln
+		SccProjectName8 = 02\u0020Darwin.Server/Artemkv.Darwin.Common
+		SccLocalPath8 = 02\u0020Darwin.Server\\Artemkv.Darwin.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1222F6-26FD-4304-AB7F-BA84389E2BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C4D252-6288-4A13-8F25-0C5D6CDB690F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{95C4D252-6288-4A13-8F25-0C5D6CDB690F}.Debug|Any CPU.Build.0 = Debug|x86
+		{95C4D252-6288-4A13-8F25-0C5D6CDB690F}.Release|Any CPU.ActiveCfg = Release|x86
+		{95C4D252-6288-4A13-8F25-0C5D6CDB690F}.Release|Any CPU.Build.0 = Release|x86
+		{99FF3235-67C9-4A05-AA03-000D26FC76B0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{99FF3235-67C9-4A05-AA03-000D26FC76B0}.Release|Any CPU.ActiveCfg = Release|x86
+		{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63983115-9B99-4640-9F4B-69B67836B14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63983115-9B99-4640-9F4B-69B67836B14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63983115-9B99-4640-9F4B-69B67836B14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63983115-9B99-4640-9F4B-69B67836B14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5466CC-0FA3-4202-BA36-20E48C9839B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5466CC-0FA3-4202-BA36-20E48C9839B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5466CC-0FA3-4202-BA36-20E48C9839B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5466CC-0FA3-4202-BA36-20E48C9839B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BE61B2B-6914-40B8-8F4F-A7BB25162FE3} = {0A2E19E2-4543-4E08-B0BB-9A431D7BA28E}
+		{4A1222F6-26FD-4304-AB7F-BA84389E2BAC} = {0A2E19E2-4543-4E08-B0BB-9A431D7BA28E}
+		{E8A01D63-6C3E-445E-A2DE-0531C56A1FC1} = {0A2E19E2-4543-4E08-B0BB-9A431D7BA28E}
+		{1F5466CC-0FA3-4202-BA36-20E48C9839B8} = {0A2E19E2-4543-4E08-B0BB-9A431D7BA28E}
+		{9FDD0A8B-40A4-40BA-BBB6-BDBD00639814} = {0F68C7EC-9107-4417-8307-C68F0C844A8B}
+		{95C4D252-6288-4A13-8F25-0C5D6CDB690F} = {0F68C7EC-9107-4417-8307-C68F0C844A8B}
+		{99FF3235-67C9-4A05-AA03-000D26FC76B0} = {EA5DA646-D233-406B-85D8-26EFEF8B49D0}
+		{63983115-9B99-4640-9F4B-69B67836B14D} = {B14BB46E-69A0-4781-BB08-82A5CAF01F38}
+	EndGlobalSection
+EndGlobal

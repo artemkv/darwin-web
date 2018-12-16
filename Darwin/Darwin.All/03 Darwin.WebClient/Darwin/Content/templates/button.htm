@@ -1,0 +1,6 @@
+﻿<button id="{{id}}" name="{{name}}" class="redui-button redui-focusable{{#model.cssClass}} {{model.cssClass}}{{/model.cssClass}}{{#model.isHidden}} redui-hidden{{/model.isHidden}}{{#model.isDialogButton}} redui-dialogbutton{{/model.isDialogButton}}" tabindex="0" type="button">{{model.text}}</button>
+{{#model.isDialogButton}}
+<script>
+  $(".redui-window-dialogbuttonspanel-inner", $("#{{id}}").closest(".redui-window")).append($("#{{id}}"));
+</script>
+{{/model.isDialogButton}}
